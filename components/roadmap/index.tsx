@@ -103,21 +103,6 @@ const RoadMapComponent = () => {
                         </RightBox>
 
                         <RightBox mt="0rem">
-                            {/* <>
-                                <Flex flexDir="column" mb={3}>
-                                    <Heading fontSize="2rem">
-                                        {' '}
-                                        4. Launch of Bullfrog capital (OHM fork)
-                                    </Heading>
-                                    <Text ml="auto" color="green.500">
-                                        Q1 2022
-                                    </Text>
-                                </Flex>
-                                <Text>
-                                    Create and launch Anura’s first protocol in
-                                    our ecosystem, Bullfrog capital.
-                                </Text>
-                            </> */}
                             <>
                                 <Flex mb={3} flexDir="column">
                                     <Heading fontSize="2rem">
