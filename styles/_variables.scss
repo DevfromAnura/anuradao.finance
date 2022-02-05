@@ -1,0 +1,37 @@
+// Theme variables
+$spacing: 10px;
+
+// Theme breakpoints
+$breakpoints: (
+    sm: 30em,
+    md: 48em,
+    lg: 62em,
+    xl: 80em,
+    xxl: 96em,
+);
+
+// Theme
+$theme: (
+    'primary': #02e279,
+    'secondary': #6ff604,
+    'info': #e6f604,
+    'warning': #04ecf6,
+    'error': #5577ff,
+    'turquoise': #04f6b7,
+);
+
+@function theme($key) {
+    @return map-get($theme, $key);
+}
+
+// Get breakpoint function
+@mixin media($name) {
+    @media all and (min-width: map-get($breakpoints, $name)) {
+        @content;
+    }
+}
+
+// Calculate spacing function
+@function spacing($value) {
+    @return $spacing * $value;
+}
