@@ -7,6 +7,7 @@ import { Image } from '@chakra-ui/react'
 
 const AboutUsComponent = () => {
     const theme = useTheme()
+    console.log()
 
     return (
         <Container maxW="container.xl">
